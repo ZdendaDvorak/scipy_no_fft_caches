@@ -23,7 +23,7 @@ else
     pocketfft_threads += ['-DPOCKETFFT_PTHREADS']
   endif
 endif
-pocketfft_args = pocketfft_threads + ['-DPOCKETFFT_CACHE_SIZE=16']
+pocketfft_args = pocketfft_threads + ['-DPOCKETFFT_CACHE_SIZE=0']
 
 incdir = include_directories('../../_lib/pocketfft')
 
